@@ -6,7 +6,7 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:10:48 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/02 18:20:23 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/02 18:32:30 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	bzero(void *s, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
