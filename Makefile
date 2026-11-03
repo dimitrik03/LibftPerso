@@ -1,4 +1,4 @@
-cc = gcc
+CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 SOURCES = $(wildcard *.c)
 OBJECTS = $(SOURCES:.c=.o)
