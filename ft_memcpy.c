@@ -6,7 +6,7 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:21:48 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/02 18:31:41 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/03 18:21:37 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,17 @@
 
 void	*ft_memcpy(void*dest, const void*src, size_t count)
 {
-	size_t	i;
+	size_t				i;
+	unsigned char		*temp_dest;
+	unsigned char const	*temp_src;
 
 	i = 0;
+	temp_dest = (unsigned char *) dest;
+	temp_src = (unsigned char const *) src;
 	while (i < count)
 	{
-		(unsigned char *) dest[i] = (unsigned char *) src[i];
+		temp_dest[i] = temp_src[i];
 		i++;
 	}
-	return (*dest);
+	return (dest);
 }

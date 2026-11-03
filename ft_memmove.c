@@ -6,15 +6,15 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:32:47 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/02 19:15:52 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/03 14:16:34 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memmove(void *dest, const void *src, size_t count)
+void	*memmove(void *dest, const void *src, int count)
 {
-	size_t	i;
+	int	i;
 
 	i = count;
 	if (src < dest)

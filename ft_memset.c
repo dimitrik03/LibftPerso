@@ -6,20 +6,23 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:55:49 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/02 18:10:12 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/03 17:40:35 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memset(void*dest, int ch, size_t count)
+void	*ft_memset(void*dest, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*t;
 
 	i = 0;
-	while (i < count)
+	t = (unsigned char *) dest;
+	while (i < n)
 	{
-		(unsigned char *)dest[i] = (unsigned char)ch;
+		t[i] = (unsigned char) c;
+		i++;
 	}
-	return (*dest);
+	return (dest);
 }
