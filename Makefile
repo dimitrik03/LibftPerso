@@ -4,13 +4,15 @@ SOURCES = $(wildcard *.c)
 OBJECTS = $(SOURCES:.c=.o)
 NAME = libft.a
 
+all: $(NAME)
+
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJECTS)
 	ar rcs $@ $^
 
-all: $(NAME)
+.PHONY: all clean fclean re
 
 clean:
 	rm -f $(OBJECTS)
@@ -18,6 +20,5 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean all
-
-.PHONY: all clean fclean re
+re: fclean
+	$(MAKE) all

@@ -6,7 +6,7 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:14:34 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/03 14:22:33 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/04 15:46:55 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-

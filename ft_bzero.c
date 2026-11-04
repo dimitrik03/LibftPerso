@@ -6,13 +6,13 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:10:48 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/03 17:47:43 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/04 10:32:11 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
