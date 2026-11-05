@@ -6,7 +6,7 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:06:34 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/04 18:04:35 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/05 17:19:42 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	i = 0;
 	len_src = ft_strlen(src);
-	if (size >= (len_src + 1))
+	if (size > 0)
 	{
-		while (i < size)
+		while ((i < size - 1) && src[i])
 		{
 			dst[i] = src[i];
 			i++;
 		}
-	}
-	else
-	{
-		while (i < size - 1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
+		dst[i] = '\0';
 	}
 	return (len_src);
 }
