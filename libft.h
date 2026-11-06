@@ -6,7 +6,7 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:14:39 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/05 13:44:35 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/06 11:22:11 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ char	*ft_strchr(const char *s, int target);
 char	*ft_strrchr(const char *str, int ch);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(char const *big, char const *little, size_t len);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif // LIBFT_H
