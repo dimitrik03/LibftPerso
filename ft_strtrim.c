@@ -6,7 +6,7 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 15:53:27 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/09 16:39:49 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/09 17:51:32 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,14 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		len;
-	int		i;
-	int		start;
-	int		end;
-	char	*dest;
+	int	start;
+	int	end;
 
-	i = 0;
-	len = ft_strlen(s1) - 1;
-	while (s1[i] == set[i])
-	{
-		i++;
-	}
-	start = i;
-	i = 0;
-	while (s1[len] == set[i])
-	{
-		len--;
-		i++;
-	}
-	end = len;
-	ft_substr(s1, start, (end - start));
-	return (dest);
+	start = 0;
+	end = ft_strlen(s1) - 1;
+	while ((ft_strchr(set, s1[start]) != NULL) && s1[start] != '\0')
+		start++;
+	while (end > start && ft_strchr(set, s1[end]) != NULL)
+		end--;
+	return (ft_substr(s1, start, (end + 1 - start)));
 }
