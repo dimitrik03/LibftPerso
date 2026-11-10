@@ -6,7 +6,7 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:14:39 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/10 16:03:30 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/10 16:12:45 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif // LIBFT_H
