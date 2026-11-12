@@ -6,7 +6,7 @@
 /*   By: dgammal <dimitri.gammal@learner.42.tech    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:14:39 by dgammal           #+#    #+#             */
-/*   Updated: 2026/11/11 12:52:02 by dgammal          ###   ########.fr       */
+/*   Updated: 2026/11/12 11:40:03 by dgammal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,7 @@ typedef struct s_list
 }	t_list;
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list * new);
+unsigned int	ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
 
 #endif // LIBFT_H
